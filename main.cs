@@ -1,9 +1,38 @@
 using System;
+using System.Numerics;
+using System.Collections.Generic;
+using Raylib_cs;
 
-int a = 1;
-int b = 2;
-float c = 3.1f;
+void Tick()
+{
+    // Game Tick
+}
 
-string text = $"{a} + {b} + {c:F1} = {a + b + c:F1}";
-Console.WriteLine(text);
-Console.WriteLine("Hello, World!");
+void CheckKeysPressed()
+{
+    // Check Keys Code
+}
+
+void Draw()
+{
+    // Draw Code
+}
+
+void Update()
+{
+    CheckKeysPressed();
+
+    Tick();
+
+    Draw();
+
+    // Main Loop Code
+}
+
+// Main game loop
+while (!Raylib.WindowShouldClose())
+{
+    Update();
+}
+
+Raylib.CloseWindow();
